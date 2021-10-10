@@ -48,8 +48,8 @@ rm /usr/share/nmap/scripts/broadcast-avahi-dos.nse
 rm /usr/share/nmap/scripts/smb-vuln-regsvc-dos.nse
 
 ## Additional Random Tools
-sudo apt install nfs-common rdesktop python3-pip libimage-exiftool-perl -y
-#terminator dradis brasero xdotool telnet libncurses5-dev traceroute build-essential chromium-bsu vlc mpv cifs-utils scrot filezilla libreoffice golang tree dnsutils coolkey t50 krb5-user
+sudo apt install gedit nfs-common python3-pip libimage-exiftool-perl -y
+#terminator dradis rdesktop brasero xdotool telnet libncurses5-dev traceroute build-essential chromium-bsu vlc mpv cifs-utils scrot filezilla libreoffice golang tree dnsutils coolkey t50 krb5-user
 
 #### Unknown additional tools from notes ###
 #sudo apt install python-xlrd -y
