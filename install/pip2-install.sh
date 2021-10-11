@@ -1,9 +1,12 @@
 #!/bin/bash
 
-### Check if root
-if[ "$EUID"-ne0 ]
-	thenecho"Please run as root!"
-	exit
+#Sudo Check
+if [ `id -u` -eq 0 ]
+then
+        echo "Running as root user :)"
+else
+        echo "Please run with sudo!"
+        exit 1
 fi
 
 mkdir -p /opt/pip/
