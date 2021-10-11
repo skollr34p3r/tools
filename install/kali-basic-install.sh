@@ -23,12 +23,12 @@ else
 fi
 
 ### Disable sleep mode
-systemctl mask sleep.target suspend.target hibernate.target hybridsleep-target
+sudo systemctl mask sleep.target suspend.target hibernate.target hybridsleep-target
 
 ### Remove default keys
-mkdir /etc/ssh/default_kali_keys
-mv /etc/ssh/ssh_host_* /etc/ssh/default_kali_keys/
-dpkg-reconfigure openssh-server
+sudo mkdir /etc/ssh/default_kali_keys
+sudo mv /etc/ssh/ssh_host_* /etc/ssh/default_kali_keys/
+sudo dpkg-reconfigure openssh-server
 
 ### More wordlists and directiry busting tools
 sudo apt install seclists ffuf -y
@@ -40,17 +40,20 @@ sudo apt install brutespray -y
 sudo apt install ldapscripts bloodhound veil -y
 
 ### Install exploit compiling packages
-apt install mingw-w64 -y
-apt install g++-multilib -y
+sudo apt install mingw-w64 -y
+sudo apt install g++-multilib -y
 
 ## Remove dos NSE Scripts
-rm /usr/share/nmap/scripts/broadcast-avahi-dos.nse
-rm /usr/share/nmap/scripts/smb-vuln-regsvc-dos.nse
+sudo rm /usr/share/nmap/scripts/broadcast-avahi-dos.nse
+sudo rm /usr/share/nmap/scripts/smb-vuln-regsvc-dos.nse
 
 ## Additional Random Tools
-sudo apt install seclists curl enum4linux feroxbuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
+sudo apt install curl enum4linux feroxbuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
 sudo apt install gedit nfs-common python3-pip libimage-exiftool-perl -y
 #terminator dradis rdesktop brasero xdotool telnet libncurses5-dev traceroute build-essential chromium-bsu vlc mpv cifs-utils scrot filezilla libreoffice golang tree dnsutils coolkey t50 krb5-user
+
+
+
 
 #### Unknown additional tools from notes ###
 #sudo apt install python-xlrd -y
