@@ -52,6 +52,12 @@ sudo apt install curl enum4linux feroxbuster impacket-scripts nbtscan nikto nmap
 sudo apt install gedit nfs-common python3-pip libimage-exiftool-perl -y
 #terminator dradis rdesktop brasero xdotool telnet libncurses5-dev traceroute build-essential chromium-bsu vlc mpv cifs-utils scrot filezilla libreoffice golang tree dnsutils coolkey t50 krb5-user
 
+# PRIVESC SCRIPTS
+cd /opt
+sudo git clone https://github.com/bitsadmin/wesng.git
+cd /opt/wesng
+sudo python3 setup.py install
+
 
 #### Unknown additional tools from notes ###
 #sudo apt install python-xlrd -y
