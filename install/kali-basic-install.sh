@@ -48,7 +48,7 @@ sudo rm /usr/share/nmap/scripts/broadcast-avahi-dos.nse
 sudo rm /usr/share/nmap/scripts/smb-vuln-regsvc-dos.nse
 
 ## Additional Random Tools
-sudo apt install curl enum4linux feroxbuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
+sudo apt install eyewitness curl enum4linux feroxbuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
 sudo apt install gedit nfs-common python3-pip libimage-exiftool-perl -y
 #terminator dradis rdesktop brasero xdotool telnet libncurses5-dev traceroute build-essential chromium-bsu vlc mpv cifs-utils scrot filezilla libreoffice golang tree dnsutils coolkey t50 krb5-user
 
