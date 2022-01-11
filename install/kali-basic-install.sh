@@ -58,6 +58,17 @@ sudo git clone https://github.com/bitsadmin/wesng.git
 cd /opt/wesng
 sudo python3 setup.py install
 
+#AUTORECON INSTALL
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+sudo apt install seclists curl enum4linux feroxbuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf -y
+sudo apt install gobuster -y
+cd /opt/
+sudo python3 -m pip install git+https://github.com/Tib3rius/AutoRecon.git
+
+
+
+
 
 #### Unknown additional tools from notes ###
 #sudo apt install python-xlrd -y
