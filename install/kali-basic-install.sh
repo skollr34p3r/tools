@@ -70,3 +70,6 @@ sudo python3 setup.py install
 #remove unused packages
 sudo apt autoclean
 sudo apt -y autoremove
+
+#COMPLETE#
+echo "INSTALL COMPLETED!"
